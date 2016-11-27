@@ -20,7 +20,7 @@ function CheckUpdate()
         local ToUpdate = {}
         ToUpdate.LocalVersion = version
         ToUpdate.VersionPath = "raw.githubusercontent.com/LucasRPC/BoL-Scripts/master/version/Lux.version"
-        ToUpdate.ScriptPath = "raw.githubusercontent.com/LucasRPC/BoL-Scripts/master/BioLogicLux.lua"
+        ToUpdate.ScriptPath = "https://raw.githubusercontent.com/xentrocity/BoL/master/xenSuite/xenSuite.lua"
         ToUpdate.SavePath = SCRIPT_PATH.._ENV.FILE_NAME
         ToUpdate.CallbackUpdate = function(NewVersion,OldVersion) PrintMessage(ScriptName, "Updated to "..NewVersion..". Please reload with 2x F9.") end
         ToUpdate.CallbackNoUpdate = function(OldVersion) PrintMessage(ScriptName, "No Updates Found.") end
